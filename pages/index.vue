@@ -11,6 +11,28 @@ const cards = [
     linkColor: "bg-green-600",
     color: "text-green-600",
   },
+  {
+    title: "Accessible Front-end Components",
+    description:
+      "Reliable accessible UI components: :focus styles, modals, date pickers, navigation, tables, buttons, SVGs.",
+    linkUrl:
+      "https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/",
+    linkText: "Explore Accessible Components",
+    bgColor: "bg-orange-100",
+    linkColor: "bg-orange-600",
+    color: "text-orange-600",
+  },
+  {
+    title: "Accessible Front-end Components",
+    description:
+      "Reliable accessible UI components: :focus styles, modals, date pickers, navigation, tables, buttons, SVGs.",
+    linkUrl:
+      "https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/",
+    linkText: "Explore Accessible Components",
+    bgColor: "bg-purple-100",
+    linkColor: "bg-purple-600",
+    color: "text-purple-600",
+  },
 ];
 </script>
 <template>
@@ -24,7 +46,7 @@ const cards = [
       <header class="text-3xl text-center py-4 font-semibold">
         <h2>Card Layout</h2>
       </header>
-      <div>
+      <div class="flex flex-wrap gap-4">
         <AppCard
           v-for="card in cards"
           :key="card.id"
