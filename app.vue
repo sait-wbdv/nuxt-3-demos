@@ -1,13 +1,8 @@
 <template>
-  <div>
-    <nav>
-      <NuxtLink to="/">Home</NuxtLink>
-      <NuxtLink to="about">About</NuxtLink>
-    </nav>
+  <div class="flex flex-col min-h-screen">
+    <TheNav />
     <!-- Page Content -->
-    <NuxtPage />
-    <footer>
-      <p>&copy; 2022 SAIT Web Developers</p>
-    </footer>
+    <NuxtPage class="grow" />
+    <TheFooter />
   </div>
 </template>
