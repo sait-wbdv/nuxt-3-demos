@@ -5,7 +5,7 @@
     >
       <h1>Home Page</h1>
     </header>
-    <section>
+    <section class="container">
       <header class="text-3xl text-center py-4 font-semibold">
         <h2>Card Layout</h2>
       </header>
