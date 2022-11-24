@@ -36,17 +36,11 @@ const cards = [
 ];
 </script>
 <template>
-  <main class="mx-auto">
-    <header
-      class="container flex justify-center text-5xl font-bold my-8 text-center"
-    >
-      <h1>Home Page</h1>
-    </header>
-    <section class="container">
-      <header class="text-3xl text-center py-4 font-semibold">
-        <h2>Card Layout</h2>
-      </header>
-      <div class="flex flex-wrap gap-4">
+  <AppMain>
+    <PageHeader title="HomePage" />
+    <AppSection>
+      <SectionHeader title="Card Layout" />
+      <CardGrid>
         <AppCard
           v-for="card in cards"
           :key="card.id"
@@ -58,7 +52,7 @@ const cards = [
           :color="card.color"
           :linkColor="card.linkColor"
         />
-      </div>
-    </section>
-  </main>
+      </CardGrid>
+    </AppSection>
+  </AppMain>
 </template>
