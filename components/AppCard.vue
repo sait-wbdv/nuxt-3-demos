@@ -39,6 +39,7 @@ defineProps({
     <div class="my-4">
       <h3>
         <NuxtLink
+          target="_blank"
           :to="linkUrl"
           :class="color"
           class="text-2xl font-semibold underline underline-offset-2"
@@ -53,6 +54,7 @@ defineProps({
     </div>
     <div>
       <NuxtLink
+        target="_blank"
         :to="linkUrl"
         :class="linkColor"
         class="block text-white text-center rounded-md mx-auto py-4 font-semibold text-xl my-6"
