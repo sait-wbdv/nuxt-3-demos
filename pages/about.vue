@@ -1,4 +1,10 @@
 <script setup>
+useHead({
+  title: "About Page",
+  meta: [
+    { name: "description", content: "The about page for our SAIT Nuxt App" },
+  ],
+});
 const kotor = [
   {
     name: "Revan",

@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      title: "SAIT Nuxt 3 App",
       meta: [
-        { name: "title", content: "Sait Nuxt 3 App" },
         {
           name: "description",
           content: "A place to learn and practice using Nuxt 3",
