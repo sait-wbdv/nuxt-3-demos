@@ -48,7 +48,7 @@ defineProps({
       </h3>
     </div>
     <div>
-      <p class="w-5/6 text-slate-800">
+      <p class="w-5/6 text-slate-800 font-serif">
         {{ info.description }}
       </p>
     </div>

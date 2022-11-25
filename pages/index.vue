@@ -1,6 +1,6 @@
 <template>
   <AppMain>
-    <PageHeader title="HomePage" />
+    <PageHeader title="Home Page" />
     <AppSection>
       <SectionHeader title="Card Layout" />
       <CardGrid>

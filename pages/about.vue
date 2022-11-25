@@ -33,7 +33,7 @@ const kotor = [
         <h3>Unordered List</h3>
         <AppList bullets>
           <AppListItem v-for="jedi in kotor" :key="jedi.id" brand>
-            <h4 class="text-xl font-semibold">{{ jedi.name }}</h4>
+            <h4 class="text-xl font-semibold font-sans">{{ jedi.name }}</h4>
             <p class="text-black">{{ jedi.description }}</p>
           </AppListItem>
         </AppList>
