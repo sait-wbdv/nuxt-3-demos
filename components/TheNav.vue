@@ -1,3 +1,4 @@
+<script setup></script>
 <template>
   <nav class="bg-purple-500 text-white justify-center flex text-xl font-bold">
     <ul class="flex space-around gap-4">
