@@ -1,64 +1,64 @@
 <script setup>
 defineProps({
-  title: {
-    type: String,
-    default: "This is a Card Title",
+  info: {
+    type: Object,
+    default() {
+      return {
+        title: "This is a Card Title",
+        description:
+          "A card contains bound information about a particular topic. This text should help test layout.",
+      };
+    },
   },
-  description: {
-    type: String,
-    default:
-      "A card contains bound information about a particular topic. This text should help test layout.",
+  link: {
+    type: Object,
+    default() {
+      return {
+        url: "#",
+        text: "Explore Button Stuff",
+      };
+    },
   },
-  linkUrl: {
-    type: String,
-    default: "#",
-  },
-  linkText: {
-    type: String,
-    default: "Explore Button Stuff",
-  },
-  bgColor: {
-    type: String,
-    default: "bg-slate-200",
-  },
-  linkColor: {
-    type: String,
-    default: "bg-slate-500",
-  },
-  color: {
-    type: String,
-    default: "text-slate-500",
+  colors: {
+    type: Object,
+    default() {
+      return {
+        bgLight: "bg-slate-200",
+        bgDark: "bg-slate-500",
+        textDark: "text-slate-500",
+      };
+    },
   },
 });
 </script>
 <template>
   <article
-    :class="bgColor"
+    :class="colors.bgLight"
     class="max-w-sm md:max-w-xs p-4 rounded-md m-4 drop-shadow-xl hover:drop-shadow-none duration-300 ease-in-out px-8"
   >
     <div class="my-4">
       <h3>
         <NuxtLink
           target="_blank"
-          :to="linkUrl"
-          :class="color"
+          :to="link.url"
+          :class="colors.textDark"
           class="text-2xl font-semibold underline underline-offset-2"
-          >{{ title }}
+          >{{ info.title }}
         </NuxtLink>
       </h3>
     </div>
     <div>
       <p class="w-5/6 text-slate-800">
-        {{ description }}
+        {{ info.description }}
       </p>
     </div>
     <div>
       <NuxtLink
         target="_blank"
-        :to="linkUrl"
-        :class="linkColor"
+        :to="link.url"
+        :class="colors.bgDark"
         class="block text-white text-center rounded-md mx-auto py-4 font-semibold text-xl my-6"
-        >{{ linkText }}</NuxtLink
+        >{{ link.text }}</NuxtLink
       >
     </div>
   </article>
