@@ -22,7 +22,7 @@ const kotor = [
 ];
 
 const refMsg = ref("");
-const msg = "Whats up World";
+let msg = "Whats up World";
 const showMsg = ref(false);
 const msgToggle = () => (showMsg.value = !showMsg.value);
 </script>
