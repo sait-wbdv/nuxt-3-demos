@@ -17,7 +17,7 @@
       <SectionHeader title="Corgi Adventure" />
       <div>
         <NuxtImg
-          src="/images/corgi.jpg"
+          src="/corgi.jpg"
           sizes="sm:100vw md:80vw lg:50vw"
           loading="lazy"
           format="webp"
