@@ -25,8 +25,10 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["nuxt-icon", "@nuxt/image-edge", "@nuxtjs/tailwindcss"],
-  image: {
-    dir: "images/",
-  },
+  modules: [
+    "nuxt-icon",
+    "@nuxt/image-edge",
+    "@nuxtjs/strapi",
+    "@nuxtjs/tailwindcss",
+  ],
 });
