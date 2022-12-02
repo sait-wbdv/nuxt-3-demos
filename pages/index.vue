@@ -2,6 +2,10 @@
   <AppMain>
     <PageHeader title="Home Page" />
     <AppSection>
+      <SectionHeader title="Route Parameters" />
+
+    </AppSection>
+    <AppSection>
       <SectionHeader title="Card Layout" />
       <CardGrid>
         <AppCard
@@ -15,19 +19,11 @@
     </AppSection>
     <AppSection>
       <SectionHeader title="Corgi Adventure" />
-      <div>
-        <NuxtImg
-          src="/corgi.jpg"
-          sizes="sm:100vw md:80vw lg:50vw"
-          loading="lazy"
-          format="webp"
-          class="mx-auto"
-        />
-      </div>
     </AppSection>
   </AppMain>
 </template>
 <script setup>
+const route = useRoute();
 const cards = [
   {
     info: {
